@@ -7,13 +7,13 @@ namespace Foodly.Models
 {
     public class User
     {
-        public int ID { get; set; }
+        public int UserID { get; set; }
         public string Username { get; set; }
         public int Password { get; set; }
         public string Email { get; set; }
         public string DisplayName { get; set; }
         public DateTime RegisterDate { get; set; }
-        public string Auth { get; set; }
         public string SecretKey { get; set; }
+        public string Auth { get; set; }
     }
 }
