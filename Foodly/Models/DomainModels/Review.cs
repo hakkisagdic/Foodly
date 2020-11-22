@@ -7,8 +7,8 @@ namespace Foodly.Models
 {
     public class Review
     {
-        public int ID { get; set; }
-        public string Author { get; set; }
+        public string UserID { get; set; }
+        public int ReviewID { get; set; }
         public string Header { get; set; }
         public string Adress { get; set; }
         public string Blog { get; set; }
@@ -19,5 +19,6 @@ namespace Foodly.Models
         public DateTime PublishDate { get; set; }
         public int Price { get; set; }
         public bool Publish { get; set; }
+        public User User { get; set; }
     }
 }
