@@ -1,8 +1,37 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
+@model List<User> 
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Username</th>
+        <th>Password</th>
+        <th>Email</th>
+        <th>Display Name</th>
+        <th>Register Date</th>
+        <th>Secret Key</th>
+        <th>Auth</th>
+    </tr>
+    @foreach (var i in Model)
+    {
+     <tr>
+        <td>@i.UserID</td>
+        <td>@i.Username</td>
+        <td>@i.Password</td>
+        <td>@i.Email</td>
+        <td>@i.DisplayName</td>
+        <td>@i.RegisterDate</td>
+        <td>@i.SecretKey</td>
+        <td>@i.Auth</td>
+     </tr>
+    }
+
+</table>
