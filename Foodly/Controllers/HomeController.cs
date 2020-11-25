@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Foodly.Models;
+using Foodly.Models.EfModels;
 
 namespace Foodly.Controllers
 {
@@ -17,10 +18,14 @@ namespace Foodly.Controllers
         {
             _logger = logger;
         }
-
-        public IActionResult Index()
+        public object Index()
         {
-            return View();
+            Context c = new Context();
+            bool b = c.Database.EnsureCreated();
+            User u = new User() { UserID = 1, Username = "Mehmet1", Password = 123, Auth = "Admin", DisplayName = "Mehmet", SecretKey = "1ad12", Email = "dwqdqw@gmail.com", RegisterDate = DateTime.Now };
+            c.Users.Add(u);
+            var variable = c.Users.ToList();
+            return View(variable);
         }
 
         public IActionResult Privacy()

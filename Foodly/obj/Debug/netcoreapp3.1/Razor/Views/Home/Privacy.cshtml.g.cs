@@ -26,8 +26,15 @@ using Foodly.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "D:\Uygulamalarim\Foodly\Foodly\Views\_ViewImports.cshtml"
+using Foodly.Models.EfModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d8ddb6bffa5a9b264bf8f89038bf03c234083fd3", @"/Views/Home/Privacy.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"05e87ed110953942a2371f592fcb2350f13f8970", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"86c8343ca3de1dbfccdaea26c20dba9b756961de", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Privacy : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998
