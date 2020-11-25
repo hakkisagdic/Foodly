@@ -232,3 +232,8 @@ _Pvt_Extensions
 
 # FAKE - F# Make
 .fake/
+.vs/Foodly/v16/.suo
+Foodly/obj/Debug/netcoreapp3.1/Foodly.csprojAssemblyReference.cache
+*.cache
+*.v2
+.vs/Foodly/v16/.suo
